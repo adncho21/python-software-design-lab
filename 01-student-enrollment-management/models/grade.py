@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 
 from models.assessment import Assessment
-from models.courseofferingenrollment import CourseOfferingEnrollment
+from models.enrollment import CourseOfferingEnrollment
 
 
 @dataclass

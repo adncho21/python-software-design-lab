@@ -5,7 +5,7 @@ from enum import Enum
 from .facilities import ClassRoom
 
 
-class EnumAssessmentType(Enum):
+class AssessmentType(Enum):
     ASSIGNMENT = "assignment"
     MIDTERM = "midterm"
     FINAL = "final"
@@ -15,7 +15,7 @@ class EnumAssessmentType(Enum):
 @dataclass
 class Assessment:
     name: str
-    assessment_type: EnumAssessmentType
+    assessment_type: AssessmentType
     weight: float
     max_score: float
     start_at: datetime | None = None

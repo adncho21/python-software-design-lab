@@ -2,7 +2,7 @@ from dataclasses import dataclass
 from datetime import date
 from enum import Enum
 
-class EnumAcademicSeason(Enum):
+class AcademicSeason(Enum):
     FALL = "fall"
     SUMMER = "summer"
     WINTER = "winter"
@@ -10,6 +10,6 @@ class EnumAcademicSeason(Enum):
 @dataclass
 class AcademicTerm:
     year: int
-    season: EnumAcademicSeason
+    season: AcademicSeason
     start_date: date
     end_date: date

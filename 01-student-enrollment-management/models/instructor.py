@@ -11,7 +11,7 @@ class InstructorTitle(str, Enum):
     LECTURER = "lecturer"
 
 
-class EnumInstructorStatus(str, Enum):
+class InstructorStatus(str, Enum):
     ACTIVE = "active"
     RETIRED = "retired"
     SUSPENDED = "suspended"
@@ -25,7 +25,7 @@ class Instructor(Person):
     department: str
     salary: int
     experience: int
-    status: EnumInstructorStatus | None = None
+    status: InstructorStatus | None = None
     hire_date: date | None = None
     termination_date: date | None = None
     certifications: list[str] = field(default_factory=list)

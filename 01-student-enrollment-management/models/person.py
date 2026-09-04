@@ -3,7 +3,7 @@ from datetime import date
 from enum import Enum
 
 
-class EnumGender(Enum):
+class Gender(Enum):
     MALE = "male"
     FEMALE = "female"
     OTHER = "other"
@@ -25,7 +25,7 @@ class Person:
     email: str
     phone_number: str
     address: Address
-    gender: EnumGender
+    gender: Gender
     date_of_birth: date
 
     # Optional fields
