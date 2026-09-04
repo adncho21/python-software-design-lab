@@ -1,11 +1,11 @@
 from dataclasses import dataclass
 
-from models.assessment import Assessment
-from models.enrollment import CourseOfferingEnrollment
+from .assessment import Assessment
+from .enrollment import CourseEnrollment
 
 
 @dataclass
 class Grade:
-    enrollment: CourseOfferingEnrollment
+    enrollment: CourseEnrollment
     assessment: Assessment
     score: float

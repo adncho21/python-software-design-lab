@@ -16,6 +16,7 @@ class Address:
     state: str
     zip_code: str
     country: str
+    apartment_number: str | None = None
 
 
 @dataclass(kw_only=True)
@@ -29,12 +30,12 @@ class Person:
     date_of_birth: date
 
     # Optional fields
-    nationality: str = None
-    emergency_contact_name: str = None
-    emergency_contact_phone_number: str = None
-    emergency_contact_relationship: str = None
-    emergency_contact_email: str = None
-    emergency_contact_address: Address = None
+    nationality: str | None = None
+    emergency_contact_name: str | None = None
+    emergency_contact_phone_number: str | None = None
+    emergency_contact_relationship: str | None = None
+    emergency_contact_email: str | None = None
+    emergency_contact_address: Address|None = None
 
 
     @property

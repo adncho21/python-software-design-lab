@@ -12,7 +12,7 @@ class EnumEnrollmentStatus(str, Enum):
     WAITLISTED = "waitlisted"
 
 @dataclass
-class CourseOfferingEnrollment:
+class CourseEnrollment:
     student: Student
     course_offering: CourseOffering
     enrollment_date: date
